@@ -1,6 +1,6 @@
 const http = require('http');
 const fs = require('fs');
-
+const path = require('path');
 
 http.createServer(function(req, res){
   console.log(`${req.method} request for ${req.url}`);
@@ -26,8 +26,6 @@ http.createServer(function(req, res){
     res.writeHead(200, {'Content-Type': 'text/plain'});
     res.end('404 file not found');
   }
-
-  console.log('Your server is running on port 3000');
 
 }).listen(3000);
 
