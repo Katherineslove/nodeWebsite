@@ -10,8 +10,9 @@ http.createServer(function(req, res){
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.end(data);
     })
-  } else if (req.url === '/css/style.css') {
-    fs.readFile('./public/css/style.css', 'UTF-8', function(err, data){
+  } else if (req.url.match(/.css/)) {
+    const cssPath = path.join(__dirname, 'public', req.url);
+    fs.readFile(cssPath, 'UTF-8', function(err, data){
       if (err) throw err;
       res.writeHead(200, {'Content-Type': 'text/css'});
       res.end(data);
