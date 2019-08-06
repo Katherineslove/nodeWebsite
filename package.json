@@ -1,0 +1,22 @@
+{
+  "name": "nodewebsite",
+  "version": "1.0.0",
+  "description": "Node Js Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Katherineslove/nodeWebsite.git"
+  },
+  "keywords": [
+    "Node"
+  ],
+  "author": "Katherine Love",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Katherineslove/nodeWebsite/issues"
+  },
+  "homepage": "https://github.com/Katherineslove/nodeWebsite#readme"
+}
